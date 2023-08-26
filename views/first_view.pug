@@ -1,0 +1,18 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title=name
+    body 
+        include ./header.pug
+        h1 Greetings from #{name}
+        p.greetings#people hello World
+        a(href=url) URL
+        img(src = "/cat.jpg", alt = "Testing Image")
+
+        if(user)
+            h1 Hi, #{user.name}
+        else
+            a(href="/sign up") Sign up
+
+        include ./footer.pug

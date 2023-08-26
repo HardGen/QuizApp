@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/style.css")
+        title Document
+    body 
+        div.signup
+            div.container
+                div.signup__content
+                    form.sigup.form(action="/signup", method="post")
+                        h1.signup__title Регистрация
+                        if( error )
+                            p #{error}
+                        input.form__input(name="firstname" type="text" required placeholder="Имя")
+                        input.form__input(name="lastname" type="text" required placeholder="Фамилия")
+                        input.form__input(name="patronymic" type="text"  placeholder="Отчество")
+                        input.form__input(name="role" type="text"  placeholder="Роль")
+                        input.form__input(name="email" type="email"  placeholder="Email")
+                        input.form__input(name="password" type="password" required placeholder="Пароль")
+                        
+                        button.form__submit.btn(type="submit") Зарегистрироваться 
+                         

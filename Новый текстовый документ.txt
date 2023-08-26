@@ -1,0 +1,22 @@
+insert into area(name) VALUES('Математика'),('Русский язык'),('История'),('Информатика');
+insert into user(firsname, lastname, patronymic, password, role) VALUES ('Вургун', 'Кафарзада', 'Эльдар оглы', '1234', 'admin');
+
+insert into test(name, area_id) VALUES ('Основные даты истории', 3), ('История Руки (9 - 12 века)', 3), ('Алгебра 8 класса', 1)
+
+
+insert INTO question(desc, test_id) VALUES ('В каком году славянские и финно-угорские племена призвали варягов?', 3); 
+insert into ask(desc,question_id) VALUES ('866',1), ('864', 1), ('862', 1), ('865', 1);
+
+
+insert INTO question(desc, test_id) VALUES ('В каком году славянские и финно-угорские племена призвали варягов??', 3); 
+insert into ask(desc,question_id) VALUES ('866',2), ('864', 2), ('862', 2), ('865', 2);
+
+
+
+insert INTO question(desc, test_id) VALUES ('Какой князь стал править в Новгороде после призвания варягов?', 3); 
+insert into ask(desc,question_id) VALUES ('Рюрик',3), ('Аскольд', 3), ('Олег', 3), ('Дир', 3);
+
+
+
+insert INTO question(desc, test_id) VALUES ('В каком году убили Святослава?', 3); 
+insert into ask(desc,question_id) VALUES ('970',4), ('971', 4), ('972', 4), ('973', 4);
